@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Ayush Kashyap</title>
+    <link rel="shortcut icon" href="asset/aklogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prjstyle.css">
+    <script src="https://kit.fontawesome.com/5f1318dd38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo-text">AYUSH KASHYAP</a>
+        <a href="/" ><img src="asset/aklogo.png" alt=""></a>
+        
+        <nav>
+            <a href="https://leetcode.com/ayush-kashyap/"><i class="fa fa-code"></i></a>
+            <a href="https://linkedin.com/in/ayush-kashyap0507"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/ayush-kashyap"><i class="fa fa-github"></i></a>
+        </nav>
+    </header>
+    <div class="main-container">
+        <div class="left">
+            <h1 >PROJECTS GALLERY</h1>
+            <p>Turning dreams into code</p>
+        </div>
+        <div class="right">
+            <img src="asset/A.png" alt="">
+            <div class="hire-me">
+                <a href="mailto:ayushkashyap0507@gmail.com">HIRE<br>ME!</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="projects">
+        <div class="cards">
+            <div class="aboutPrj"><div class="top"><h3><i class="fa fa-code-branch"></i>  Portfolio</h3> <em>06-March-2024</em></div>
+                <p>
+                    Introducing my latest project: my very own portfolio! Dive into a curated collection that highlights my expertise, experiences, and passion in Web Development. From sleek web designs to captivating graphic creations, each element represents my commitment to excellence and innovation. Join me on this journey as I showcase my skills and offer a glimpse into what I bring to the table.
+                </p>
+                <div class="bottom">
+                    
+                    <a class="btn-h" href="https://github.com/ayush-kashyap/aayu-portfolio" target="_blank">
+                        Source code  <i class="fa fa-code"></i>
+                    </a>
+            </div>
+            </div>
+            <img src="asset/projects/portfolio.png" alt="proj">
+        </div>
+        <div class="cards">
+            <div class="aboutPrj"><div class="top"><h3><i class="fa fa-code-branch"></i>  Dragon Dodge Game</h3> <em>21-August-2021</em></div>
+                <p>
+                    Introducing "Dragon Dodge Game" - a browser-based JavaScript adventure that brings the excitement of dragon evasion to your screen! In this thrilling game, players must navigate through obstacles and evade fire-breathing dragons using only their wits and reflexes.
+                </p>
+            <div class="bottom">
+                <a href="https://dragon-dodge-game.netlify.app/" target="_blank" class="btn-h" >
+                View Project  <i class="fa fa-code"></i>
+            </a>
+                <a class="btn-h" href="https://github.com/ayush-kashyap/Dragon-Dodge" target="_blank">
+                Source code  <i class="fa fa-code"></i>
+            </a>
+        </div>
+            </div>
+            <img src="asset/projects/dragondodge.png" alt="proj">
+            
+        </div>
+        
+    </div>
+    <script>
+        window.addEventListener("scroll",callProject);
+
+function callProject(){
+    if(window.scrollY>100)
+    {
+        document.querySelector(".hire-me").style.backgroundColor="var(--primary)"
+        document.querySelector(".hire-me").style.boxShadow="0 0 10px  var(--primary)"
+        document.querySelector(".hire-me a").style.color="var(--secondary)"
+    }
+    else
+    {document.querySelector(".hire-me").style.backgroundColor="var(--secondary)"
+    document.querySelector(".hire-me").style.boxShadow="0 0 10px  var(--secondary)"
+    document.querySelector(".hire-me a").style.color="var(--primary)"
+    
+}
+}
+    </script>
+</body>
+</html>

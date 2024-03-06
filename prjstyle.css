@@ -1,0 +1,108 @@
+:root{
+    --primary: #2AD87F;
+    --primaryLight: #2ad87ebf;
+    --secondary: #1E242B;
+}
+.main-container{
+    height: 100vh;
+    
+}
+
+.left{
+    border-bottom: 5px solid var(--primary);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--primary);
+    padding: 0 5rem;
+    font-size: 2.8rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.left h1{
+    margin-bottom: 1rem;
+}
+
+.left p{
+    color: white;
+    font-size: 2rem;
+}
+.projects{
+    width: 100vw;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: scroll;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 2rem 0;
+}
+.projects::-webkit-scrollbar{
+    display: none;
+}
+.cards{
+    position: relative;
+    margin: 2rem 0;
+    min-width: 50%;
+    box-sizing: border-box;
+    border: 2px solid var(--primary);
+
+}
+.cards img{
+    height: 60vh;
+}
+.aboutPrj{
+    bottom: 0;
+    left: 0;
+    height: 15%;
+    background-color: var(--primaryLight);
+    backdrop-filter: blur(5px);
+    position:absolute;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    transition: height linear 300ms;
+    overflow: hidden;
+    font-weight: bold;
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cards:hover .aboutPrj{
+    height: 100%;
+}
+.top{ display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.cards h3{
+    font-weight: bold;
+    color: var(--secondary);
+    margin: 0;
+}
+.btn-h{
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--secondary);
+    width: 49%;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media only screen and (max-width: 820px){
+    .left{
+        font-size: 2rem;
+    }
+}
