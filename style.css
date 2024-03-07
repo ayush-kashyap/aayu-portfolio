@@ -183,6 +183,12 @@ nav a{
     .left h1{
         font-size: 4rem;
     }
+    .left-text{
+        margin:0;
+    }
+    .left{
+        justify-content: center;
+    }
     .textbox{
         height: 10vh;
     }
@@ -195,6 +201,7 @@ nav a{
         font-size: 3rem;
 
     }
+    
     header img{
         display: none;
     }
