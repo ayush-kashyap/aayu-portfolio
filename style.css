@@ -118,6 +118,7 @@ header img{
 .hire-me{
     display: flex;
     font-weight: bold;
+    z-index: 1;
     justify-content: center;
     text-align: center;
     align-items: center;
