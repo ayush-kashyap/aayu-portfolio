@@ -29,12 +29,11 @@
     font-size: 2rem;
 }
 .projects{
-    width: 100vw;
+    width: 100%;
     background-color: var(--secondary);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    overflow: scroll;
     box-sizing: border-box;
     align-items: center;
     padding: 2rem 0;
@@ -128,6 +127,14 @@
 .left{
     padding: 0;
     align-items: center;
+}
+.bottom{
+    flex-direction: column;
+
+}
+.btn-h{
+    width: 100%;
+    margin: 0.2rem 0;
 }
 .left p{
     font-size: 1rem;
