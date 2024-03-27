@@ -51,6 +51,7 @@
 
 }
 .cards img{
+    
     height: 60vh;
 }
 .aboutPrj{
@@ -71,6 +72,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
 .cards:hover .aboutPrj{
     height: 100%;
 }
@@ -98,7 +100,30 @@
     display: flex;
     justify-content: space-between;
 }
-
+@media only screen and (max-width: 1080px){
+    .projects{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards .aboutPrj{
+        position: static;
+        width:50vw;
+    }
+    .cards img{
+        width: 50vw;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 700px){
+    .cards .aboutPrj{
+        position: static;
+        width:70vw;
+    }
+    .cards img{
+        width: 70vw;
+        height: auto;
+    }
+}
 @media only screen and (max-width: 580px){
 .left{
     padding: 0;
@@ -106,6 +131,14 @@
 }
 .left p{
     font-size: 1rem;
+}
+.cards .aboutPrj{
+    position: static;
+    width:85vw;
+}
+.cards img{
+    width: 85vw;
+    height: auto;
 }
 
 }
